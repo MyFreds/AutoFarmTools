@@ -48,7 +48,6 @@ In addition, the plugin includes a simple shop system (`/autofarmtoolshop`) wher
 CONTACT
 - YouTube: Fredy Ma'ruf
 - Discord: Fredy Ma'ruf#0905
-- Whatsapp: 0852-1224-4077
 - GitHub: MyFreds
 - Email: id.luxy.store@gmail.com
 
