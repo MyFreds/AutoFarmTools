@@ -71,7 +71,7 @@ class Main extends PluginBase implements Listener
             if ($command->getName() === "autofarmtoolshop") {
                 if (!$this->shopConfig["autofarmtoolshop-enable"]) {
                     $sender->sendMessage(
-                        $this->shopConfig["shop-disabled"] ??
+                        $this->shopConfig["messages"]["shop-disabled"] ??
                             "Auto Farm Tools tidak dijual saat ini."
                     );
                     return true;
