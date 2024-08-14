@@ -184,7 +184,7 @@ class Main extends PluginBase implements Listener
             $price = $this->shopConfig["price"] ?? 100;
             $content = $this->shopConfig["content"] ?? "§aKlik button untuk membeli alat";
           
-            $content = str_replace(["{money}", "{price}"], (string) $balance, $this->shopConfig["price"], $content);
+            $content = str_replace(["{money}", "{price}"], [(string) $balance, $this->shopConfig["price"]], $content);
 
             $form = new SimpleForm(function (Player $player, $data) use ($price, $balance) {
                 if ($data === null) {
