@@ -1,0 +1,6 @@
+# Configuration Auto Farm Tools (message)
+
+received-auto-farm: "§aYou have received §l§dAuto Farm Tools!"
+inventory-full: "§cYour inventory is full!"
+seeds-planted: "§aSeeds have been planted in an empty farmland!"
+no-empty-farmland-or-no-seed: "§cThere are no empty farmlands available or no seeds in your inventory!"
