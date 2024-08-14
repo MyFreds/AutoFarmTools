@@ -1,0 +1,14 @@
+# Configuration Auto Farm Tools (autofarmtoolshop)
+
+# Enable or Disable Shop Auto Farm Tools (true/false)
+autofarmtoolshop-enable: true
+
+title: "§l§6Auto Farm Tools Shop"
+content: "§aClick the Button to purchase the tool\n§eYour Money: §f{money}"
+button-name: "§l§dAuto Farm Tools\n§r§0Click To Buy"
+price: 100  # Price Auto Farm Tools
+
+messages:
+  shop-disabled: "§l§dAuto Farm Tools §r§cnot for sale at this time."
+  bought-auto-farm: "§aYou have purchased §l§dAuto Farm Tools!"
+  not-enough-money: "§cYou don't have enough money to buy §l§dAuto Farm Tools."
