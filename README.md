@@ -29,7 +29,7 @@ In addition, the plugin includes a simple shop system (`/autofarmtoolshop`) wher
 
 # ❔ Basic Command
 - `/autofarmtools`: Gives the player a "Auto Farm Tools" stick, which can be used to plant seeds.
-- `/spshop`: Opens the Auto Farm Tools shop where players can buy the Auto Farm Tools item using in-game currency. The availability of the shop and the price of the item can be configured in the **autofarmtoolshop.yml** file.
+- `/autofarmtoolshop`: Opens the Auto Farm Tools shop where players can buy the Auto Farm Tools item using in-game currency. The availability of the shop and the price of the item can be configured in the **autofarmtoolshop.yml** file.
 
 # ⚙️ Dendencies
 | Plugin/Virion  | Download                                                                    |
@@ -53,4 +53,4 @@ CONTACT
 - Email: id.luxy.store@gmail.com
 
 CREDIT
-- Icon by [Freepix - Flaticon](https://www.flaticon.com/search?word=Discord)
+- Icon by [Freepix - Flaticon](https://www.flaticon.com/search?word=Seed)
