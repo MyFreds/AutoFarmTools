@@ -4,7 +4,7 @@
 autofarmtoolshop-enable: true
 
 title: "§l§6Auto Farm Tools Shop"
-content: "§aClick the Button to purchase the tool\n§eYour Money: §f{money}"
+content: "§aClick the Button to purchase the tool\n§eYour Money: §f{money}\n§ePrice: §f{price}"
 button-name: "§l§dAuto Farm Tools\n§r§0Click To Buy"
 price: 100  # Price Auto Farm Tools
 
