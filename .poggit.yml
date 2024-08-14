@@ -1,0 +1,11 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/MyFreds/AutoFarmTools
+build-by-default: true
+branches:
+- main
+projects:
+  AutoFarmTools:
+    path: ""
+    libs:
+      - src: MyFreds/libEco/libEco
+        version: ^4.0.0
+...
