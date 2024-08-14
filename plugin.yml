@@ -1,0 +1,25 @@
+name: AutoFarmTools
+main: Fred\autofarmtools\Main
+version: 1.0.0
+api: 5.0.0
+author: Fred
+virion: [libEco]
+softdepend: [EconomyAPI, BedrockEconomy]
+
+commands:
+  autofarmtools:
+    description: Gives the Auto Farm Tools stick
+    usage: /aft
+    permission: autofarmtools.command
+    aliases: ["aft"]
+  autofarmtoolshop:
+    description: Open Auto Farm Tools Shop
+    usage: /aftshop
+    permission: autofarmtools.command.shop
+    aliases: ["aftshop"]
+    
+permissions:
+  autofarmtools.command:
+    default: op
+  autofarmtools.command.shop:
+    default: true
