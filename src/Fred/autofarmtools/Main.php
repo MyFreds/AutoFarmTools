@@ -57,12 +57,12 @@ class Main extends PluginBase implements Listener
                     $sender->sendMessage(
                         $this->messages["received-auto-farm"] ??
                             TextFormat::GREEN .
-                                "Kamu telah menerima Auto Farm Tools!"
+                                "You have received §l§dAuto Farm Tools!"
                     );
                 } else {
                     $sender->sendMessage(
                         $this->messages["inventory-full"] ??
-                            TextFormat::RED . "Inventory kamu penuh!"
+                            TextFormat::RED . "Your inventory is full!"
                     );
                 }
                 return true;
@@ -72,7 +72,7 @@ class Main extends PluginBase implements Listener
                 if (!$this->shopConfig["autofarmtoolshop-enable"]) {
                     $sender->sendMessage(
                         $this->shopConfig["messages"]["shop-disabled"] ??
-                            "Auto Farm Tools tidak dijual saat ini."
+                            "Auto Farm Tools §r§cnot for sale at this time."
                     );
                     return true;
                 }
@@ -82,7 +82,7 @@ class Main extends PluginBase implements Listener
             }
         } else {
             $sender->sendMessage(
-                "Perintah ini hanya bisa digunakan oleh pemain."
+                "This command can only run by player."
             );
         }
         return false;
@@ -149,13 +149,13 @@ class Main extends PluginBase implements Listener
                 $player->sendMessage(
                     $this->messages["seeds-planted"] ??
                         TextFormat::GREEN .
-                            "Benih telah ditanam di farmland yang kosong!"
+                            "Seeds have been planted in an empty farmland!"
                 );
             } else {
                 $player->sendMessage(
                     $this->messages["no-empty-farmland-or-no-seed"] ??
                         TextFormat::RED .
-                            "Tidak ada farmland kosong yang tersedia atau tidak ada benih di inventory anda!"
+                            "There are no empty farmlands available or no seeds in your inventory!"
                 );
             }
         }
@@ -182,7 +182,7 @@ class Main extends PluginBase implements Listener
         $economy = new libEco();
         $economy->myMoney($player, function(float $balance) use ($player) {
             $price = $this->shopConfig["price"] ?? 100;
-            $content = $this->shopConfig["content"] ?? "§aKlik button untuk membeli alat";
+            $content = $this->shopConfig["content"] ?? "§aClick the button to purchase tool";
           
             $content = str_replace(["{money}", "{price}"], [(string) $balance, $this->shopConfig["price"]], $content);
 
@@ -200,18 +200,18 @@ class Main extends PluginBase implements Listener
                             $player->getInventory()->addItem($item);
                             $player->sendMessage(
                                 $this->shopConfig["messages"]["bought-auto-farm"] ??
-                                    "§aKamu telah membeli Auto Farm Tools!"
+                                    "§aYou have purchased §l§dAuto Farm Tools!"
                             );
                         } else {
                             $player->sendMessage(
-                                "§cGagal mengurangi uang, silakan coba lagi."
+                                "§cFailing to reduce money, please try again!"
                             );
                         }
                     });
                 } else {
                     $player->sendMessage(
                         $this->shopConfig["messages"]["not-enough-money"] ??
-                            "§cUang kamu tidak cukup untuk membeli Auto Farm Tools."
+                            "§cYou don't have enough money to buy §l§dAuto Farm Tools."
                     );
                 }
             });
@@ -221,7 +221,7 @@ class Main extends PluginBase implements Listener
             );
             $form->setContent($content);
             $form->addButton(
-                $this->shopConfig["button-name"] ?? "§aBeli Auto Farm Tools"
+                $this->shopConfig["button-name"] ?? "§aBuy Auto Farm Tools"
             );
             $player->sendForm($form);
         });
